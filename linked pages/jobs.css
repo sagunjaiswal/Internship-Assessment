@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+.btn {
+  font-size: 1.4rem;
+  background: transparent;
+  font-weight: bold;
+  border: 0.05rem solid #c59d5f;
+  color: #0077b5;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease-in-out;
+  margin-top: 55px;
+}
+.btn:hover {
+  /* // background: var(--lightBlue); */
+  /* // color: var(--mainBlue); */
+  background: hsl(210, 22%, 49%);
+  color: black;
+}
+.btn:focus {
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  height: auto;
+  outline-color: grey;
+  background-color: #fff;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  background: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.box {
+  width: 20%;
+  height: 300px;
+  cursor: pointer;
+  background: #fff;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 50px;
+  border: 0.05rem solid #b3b6b9;
+}
+.box img {
+  justify-content: center;
+  width: 80%;
+  height: 40%;
+}
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .box {
+    width: 90%;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  max-height: 8vh;
+  background-color: #283e4a;
+  font-family: "Philosopher", sans-serif;
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 80px;
+}
+
+nav ul .search-icon {
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+nav ul .search-icon input {
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: gray;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
+nav .input-icons i {
+  position: absolute;
+}
+
+nav .input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: gray;
+}
+
+nav .icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+nav .search {
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  background: #e1e9ee;
+  border-radius: 5px;
+}
+.logo {
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.user-icon-smallscreen {
+  visibility: hidden;
+}
+.navLinks {
+  z-index: 99999;
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-around;
+  width: 80%;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.navLinks li {
+  z-index: 99999;
+  list-style: none;
+  margin-left: 0.07rem;
+  margin-right: 1.77rem;
+}
+
+.navLinks a {
+  z-index: 99999;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  .navLinks {
+    visibility: hidden;
+  }
+  .user-icon-smallscreen {
+    visibility: visible;
+    padding-right: 40px;
+  }
+  .logo {
+    visibility: hidden;
+  }
+
+  nav .search {
+    width: 400%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navLinks {
+    /* z-index:99999; */
+    width: 60%;
+    visibility: hidden;
+  }
+
+  nav .search {
+    width: 200%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  nav .logo {
+    visibility: hidden;
+  }
+}

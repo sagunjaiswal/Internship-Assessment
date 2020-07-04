@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+}
+.container {
+  /* width: 560px; */
+
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto;
+  border-bottom: grey;
+  /* padding-top: 50px; */
+}
+.container .card {
+  background: #fff;
+  margin: 0 auto;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 10px;
+}
+.container .card .card-header {
+  padding: 15px;
+}
+
+.container .card .card-header .profile-img {
+  display: inline-block;
+  height: 40px;
+  width: 50px;
+}
+
+.container .card .card-header .profile-info {
+  display: inline-block;
+  color: #444444;
+}
+.container .card .card-header .location {
+  font-size: 12px;
+  color: #444444;
+}
+.container .card .card-header .follow-btn {
+  display: inline-block;
+  float: right;
+
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #0077b5;
+  padding: 5px 10px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  /* font-weight: bolder; */
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.container .card .card-header .follow-btn:active {
+  transform: scale(1);
+  border: none;
+  outline: none;
+}
+.container .card .card-header .follow-btn:hover {
+  color: black;
+  border: none;
+  outline: none;
+}
+.container .card .card-header .time {
+  display: inline-block;
+  float: right;
+  font-size: 16px;
+  color: grey;
+}
+.container .card .posts-image {
+  width: 95%;
+  margin-left: 2.5%;
+  height: 60%;
+}
+.container .card .posts-caption {
+  width: 95%;
+  margin-left: 2.5%;
+  font-size: 18px;
+}
+.container .card .like-button {
+  display: inline-block;
+  margin: 20px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transform: scale(1.2);
+  /* color: #0077b5; */
+  padding: 5px 10px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  /* font-weight: bolder; */
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  max-height: 8vh;
+  background-color: #283e4a;
+  font-family: "Philosopher", sans-serif;
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 80px;
+}
+
+nav ul .search-icon {
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+nav ul .search-icon input {
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: gray;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
+nav .input-icons i {
+  position: absolute;
+}
+
+nav .input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: gray;
+}
+
+nav .icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+nav .search {
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  background: #e1e9ee;
+  border-radius: 5px;
+}
+.logo {
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.user-icon-smallscreen {
+  visibility: hidden;
+}
+.navLinks {
+  z-index: 99999;
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-around;
+  width: 80%;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.navLinks li {
+  z-index: 99999;
+  list-style: none;
+  margin-left: 0.07rem;
+  margin-right: 1.77rem;
+}
+
+.navLinks a {
+  z-index: 99999;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+  .navLinks {
+    visibility: hidden;
+  }
+  .user-icon-smallscreen {
+    visibility: visible;
+    padding-right: 40px;
+  }
+  .logo {
+    visibility: hidden;
+  }
+
+  nav .search {
+    width: 400%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navLinks {
+    /* z-index:99999; */
+    width: 60%;
+    visibility: hidden;
+  }
+
+  nav .search {
+    width: 200%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  nav .logo {
+    visibility: hidden;
+  }
+}
