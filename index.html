@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/icon.png" />
+    <!-- font awesome link just for the like button-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--styles-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>LinkedIn</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav>
+      <div class="logo">
+        <img src="./images/icon.png" width="40px" height="40px" />
+      </div>
+      <div class="user-icon-smallscreen">
+        <a href="#"><img
+          src="./images/user-icon.png"
+          width="40px"
+          height="40px"
+          id="user"
+      /></a>
+      </div>
+    
+      <div class="input-icons"> 
+        <i class="fa fa-search icon"></i> 
+        <input class="search" type="text"  placeholder="Search"> 
+      </div>
+      <ul class="navLinks">
+        <li>
+          <a href="index.html"><img src="./images/home-icon.png" width="80px" height="50px" /></a>
+        </li>
+        <li>
+          <a href="linked pages/networks.html"><img
+              src="./images/network-icon.png"
+              width="60px"
+              height="40px"
+              style="padding-top: 10px;"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="linked pages/jobs.html"><img
+              src="./images/jobs-icon.png"
+              width="80px"
+              height="40px"
+            /></a>
+        </li>
+        <li>
+          <a href="linked pages/messages.html"><img
+            src="./images/messaging-icon.png"
+            width="80px"
+            height="40px"
+            class="visible-icon"
+            id="message"
+          /></a>
+        </li>
+        <li>
+          <a href="linked pages/notifications.html"><img
+              src="./images/notificationns-icon.png"
+              width="80px"
+              height="40px"
+            /></a>
+        </li>
+        <li>
+          <a href="#"><img
+            src="./images/user-icon.png"
+              width="40px"
+              height="40px"
+              id="user"
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img
+              src="./images/work-icon.png"
+              width="80px"
+              height="40px"
+            /></a>
+        </li>
+        <li>
+          <a href="#"><img
+              src="./images/try-premium-icon.png"
+              width="80px"
+              height="40px"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <!--left div-->
+      <div class="left-side">
+        <div id="side1" class="left-side"><img src="./images/profile.png" class="img" width="40px" height="40px"/></div>
+        <div class="text" style="font-weight: bolder;">
+          username<br/>
+          <hr/>
+        </div>
+        <div class="text1" >
+          <li>Connections<hr/> </li>
+          <li>
+            Groups<hr/>
+          </li> 
+          <li>Expand your network<hr/></li>
+        </div>
+      </div>
+      
+        <!--main mid div-->
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <div class="profile-img">
+              <img src="./images/icon.png" class="profile-img">
+            </div>
+            <div class="profile-info">
+              <div class="name" style="font-weight: bolder;">LinkedIn</div>
+              <div class="location">12,107,982 followers<br/>Promoted</div>
+            </div>
+            <button onclick = "changeColor()" class="follow-btn">+ Follow</button>
+          </div>
+          <div class="posts-caption">While many industries have been hit hard by COVID-19, some are on the rise. Here are ten roles that are in-demand today and skills to help you land at the correct place.</div>
+            <img src="./images/post1.png" class="posts-image">
+            <button class="like-button"><i class="fa fa-thumbs-up" aria-hidden="true" onclick="like1()">0 Like</i></button>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="profile-img">
+                <img src="./images/post2-prof.jpg" style="border-radius: 50%;" class="profile-img">
+              </div>
+              <div class="profile-info">
+                <div class="name" style="font-weight: bolder;">Tezi Khan</div>
+                <div class="location">Software Engineer</div>
+              </div>
+              <div class="time">
+                1 hr
+              </div>   
+            </div>
+            <div class="posts-caption" style="height: auto">Which CSS framework  is good for Angular  2+ apart from bootstrap any suggestions?</div>
+            <button class="like-button"><i class="fa fa-thumbs-up" aria-hidden="true" onclick="like2()">0 Like</i></button>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="profile-img">
+                <img src="./images/icon.png" class="profile-img">
+              </div>
+              <div class="profile-info">
+                <div class="name" style="font-weight: bolder;">LinkedIn Marketing Solutions</div>
+                <div class="location">4,259,248 followers<br/>Promoted</div>
+              </div>
+              <button onclick = "changeColor()" class="follow-btn">+ Follow</button>
+            </div>
+            <div class="posts-caption">Leverage your LinkedIn page to its full potential.Boost engagement of a post with $50 in free Linkedin ad credits</div>
+              <img src="./images/post3.jpeg" class="posts-image">
+              <button class="like-button"><i class="fa fa-thumbs-up" aria-hidden="true" onclick="like3()">0 Like</i></button>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <div class="profile-img">
+                  <img src="./images/post4-prof.jpg" style="border-radius: 50%;" class="profile-img">
+                </div>
+                <div class="profile-info">
+                  <div class="name" style="font-weight: bolder;">TARUN KAUSHIK</div>
+                  <div class="location">Founder and CEO of Suno App<br/></div>
+                </div>
+                <div class="time">
+                  3 hr
+                </div>   
+              </div>
+              <div class="posts-caption" style="height: auto">Which CSS framework  is good for Angular  2+ apart from bootstrap any suggestions?</div>
+              <button class="like-button"><i class="fa fa-thumbs-up" aria-hidden="true" onclick="like4()">0 Like</i></button>
+            </div>
+            </div>
+            
+        </div>
+        
+        
+    
+    </main>
+    <!--footer for small screen-->
+    <footer class="navi">
+      <a href="index.html" class="navi-link">
+        <img src="./images/home-bottom.png">
+        <span class="navi-text">Home</span>
+      </a>
+      <a href="./linked pages/networks.html" class="navi-link">
+        <img src="./images/network-bottom.png">
+        <span class="navi-text">My network</span>
+      </a>
+      <a href="#" class="navi-link">
+        <img src="./images/post-bottom.png">
+        <span class="navi-text">Post</span>
+      </a>
+      <a href="./linked pages/notifications.html" class="navi-link">
+        <img src="./images/notifications-bottom.png">
+        <span class="navi-text">Notifications</span>
+      </a>
+      <a href="./linked pages/jobs.html" class="navi-link">
+        <img src="./images/jobs-bottom.png">
+        <span class="navi-text">Jobs</span>
+      </a>
+    </footer>
+    <!--javascript-->
+    <script src="app.js"></script>
+  </body>
+</html>

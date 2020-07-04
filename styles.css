@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #283e4a;
+  font-family: "Philosopher", sans-serif;
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 80px;
+}
+
+nav ul .search-icon {
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+nav ul .search-icon input {
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: gray;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
+nav .input-icons i {
+  position: absolute;
+}
+
+nav .input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: gray;
+}
+
+nav .icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+nav .search {
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  background: #e1e9ee;
+  border-radius: 5px;
+}
+.logo {
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+.user-icon-smallscreen {
+  visibility: hidden;
+}
+.navLinks {
+  z-index: 99999;
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-around;
+  width: 80%;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.navLinks li {
+  z-index: 99999;
+  list-style: none;
+  margin-left: 0.77rem;
+}
+
+.navLinks a {
+  z-index: 99999;
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  font-weight: bold;
+}
+footer {
+  bottom: 0;
+  visibility: hidden;
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+  background-color: #eee;
+  height: 55px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.navi-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.navi-link img {
+  width: 40px;
+  height: 30px;
+}
+
+/*for right side*/
+
+.right-side {
+  top: 70px;
+  left: 1100px;
+  position: absolute;
+  width: 220px;
+  height: 330px;
+  background-color: #fff;
+  margin: 0 auto;
+
+  padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .left-side {
+    visibility: hidden;
+  }
+  .right-side {
+    visibility: hidden;
+  }
+}
+/*so that the navbar links dont collapse on each other when the screen is like mid size*/
+@media screen and (max-width: 900px) {
+  .navLinks {
+    visibility: hidden;
+  }
+  .user-icon-smallscreen {
+    visibility: visible;
+    padding-right: 40px;
+  }
+  .logo {
+    visibility: hidden;
+  }
+  footer {
+    visibility: visible;
+  }
+  nav .search {
+    width: 400%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .left-side {
+    visibility: hidden;
+  }
+  .right-side {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navLinks {
+    width: 60%;
+    visibility: hidden;
+  }
+  footer {
+    visibility: visible;
+  }
+  nav .search {
+    width: 200%;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  nav .logo {
+    visibility: hidden;
+  }
+  .left-side {
+    visibility: hidden;
+  }
+  .right-side {
+    visibility: hidden;
+  }
+}
+
+.container {
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto;
+  border-bottom: grey;
+  padding-top: 50px;
+}
+.container .card {
+  background: #fff;
+  margin: 0 auto;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.container .card .card-header {
+  padding: 15px;
+}
+
+.container .card .card-header .profile-img {
+  display: inline-block;
+  height: 40px;
+  width: 50px;
+}
+
+.container .card .card-header .profile-info {
+  display: inline-block;
+}
+.container .card .card-header .location {
+  font-size: 12px;
+  color: #444444;
+}
+.container .card .card-header .follow-btn {
+  display: inline-block;
+  float: right;
+
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #0077b5;
+  padding: 5px 10px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.container .card .card-header .follow-btn:active {
+  transform: scale(1);
+  border: none;
+  outline: none;
+}
+.container .card .card-header .follow-btn:hover {
+  color: black;
+  border: none;
+  outline: none;
+}
+.container .card .card-header .time {
+  display: inline-block;
+  float: right;
+  font-size: 16px;
+  color: grey;
+}
+.container .card .posts-image {
+  width: 95%;
+  margin-left: 2.5%;
+  height: 60%;
+}
+.container .card .posts-caption {
+  width: 95%;
+  margin-left: 2.5%;
+  font-size: 18px;
+}
+.container .card .like-button {
+  display: inline-block;
+  margin: 20px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transform: scale(1.2);
+
+  padding: 5px 10px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+.container .post {
+  margin: 1rem;
+}
+.container .post .posts {
+  -webkit-box-shadow: 0 3px 18px rgba(0, 0, 0, 0.25);
+}
+.posts .posts-image {
+  width: 95%;
+  margin-left: 2.5%;
+}
+.left-side {
+  top: 70px;
+  left: 30px;
+  position: absolute;
+  width: 220px;
+  height: 330px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+#side1 {
+  top: 0;
+  left: 10px;
+
+  width: 160px;
+  height: 30px;
+  font-size: 20px;
+  color: #868383;
+}
+.left-side .img {
+  top: 30px;
+  left: 60px;
+  position: absolute;
+}
+.left-side .text {
+  top: 100px;
+  left: 40px;
+  position: absolute;
+}
+.left-side .text1 {
+  top: 150px;
+  left: 10px;
+  position: absolute;
+  font-size: 1rem;
+}
+.left-side .text1 li {
+  list-style: none;
+  margin: 1rem;
+  color: #0077b5;
+  font-size: 0.9rem;
+}
+/*left side fished*/
+/*mid section*/
+.post00 {
+  top: 70px;
+  left: 240px;
+  position: absolute;
+  width: 600px;
+  height: 210px;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 95%;
+  }
+}
